@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Hezekiah Dike</title>
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <style>
+        .show{
+            display: block;
+        }
+    </style>
+
+</head>
+<body class="m-0 p-0 box-border text-[Work Sans]">
+  <!-- 🔹 Navbar -->
+  <nav class="flex flex-row sticky top-0 w-full bg-white justify-between px-8 lg:px-20 py-8 z-50">
+    <div>
+      <a href="index.html" class="flex flex-row gap-1.5 items-center">
+        <div class="px-2.5 py-1 bg-primary text-white rounded-full font-bold">P</div>
+        <div class="font-poppins font-semibold text-dark">Hezekiah</div>
+      </a>
+    </div>
+
+    <div>
+      <!-- Mobile Menu -->
+      <div class="dropDown relative inline-block lg:hidden">
+        <button id="dropBtn" class="font-bold text-3xl md:text-4xl">
+          <i class="ph ph-list"></i>
+        </button>
+        <button
+          id="cancleBtn"
+          class="hidden px-2.5 py-1 font-normal text-[0.8rem] bg-light-bg rounded-full"
+        >
+          X
+        </button>
+
+        <div
+          id="myDropdown"
+          class="hidden pb-20 md:px-20 flex items-center flex-col absolute right-0 top-full min-w-[10rem] bg-white overflow-auto z-10 rounded-lg shadow-lg"
+        >
+          <ul class="mt-3.5 flex flex-col gap-4 items-center">
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="my_work.html"><li>My Work</li></a>
+            <a href="blog/index.html"><li>Blog</li></a>
+            <a href="contact.html" class="bg-primary text-white px-3 py-2 rounded-sm"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex flex-row">
+        <ul class="flex flex-row gap-8 items-center">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="my_work.html"><li>My Work</li></a>
+          <a href="blog/index.html"><li>Blog</li></a>
+          <a href="contact.html" class="bg-primary text-white px-3 py-2 rounded-md"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- 🌐 Main Section Wrapper -->
+<main class="bg-accent px-5 py-10 md:px-10 lg:px-20">
+  
+  <!-- 🧩 About Section: Author Bio -->
+  <section class="bg-white w-full py-5 px-5 flex flex-col gap-5 md:flex-row-reverse rounded-lg shadow-md">
+    
+    <!-- 🧠 Text Section (Bio and Description) -->
+    <div class="flex flex-col gap-2 md:w-1/2 font-work text-text">
+      <!-- 🏷️ Heading -->
+      <h1 class="text-base font-semibold leading-[1] md:text-lg lg:text-2xl text-dark">
+        P. Hezekiah Dike, An author, educator, and community leader
+      </h1>
+
+      <!-- 📜 Biography Paragraph -->
+      <p class="text-[10px] leading-tight md:text-sm lg:text-lg text-muted">
+        I am P. Hezekiah Dike, an author, educator, and community leader from Awka, Nigeria. My work is rooted in
+        a lifelong commitment to documenting history, culture, and traditions — particularly those of the Awka
+        people. <br>
+        Born in 1940, I studied in Nigeria and London, where I gained extensive academic and professional
+        experience. Over the years, I worked with international companies including Philips (Oslo) and the
+        Greater London Council (UK), before returning to Nigeria to contribute to its industrial and educational
+        development. <br>
+        In 1990, I established Hez Dike Schools, a private primary and post-primary institution in Awka,
+        dedicated to nurturing young minds and preserving cultural values. Alongside education, I have authored
+        books that serve as both historical records and cultural preservation projects, ensuring that future
+        generations remain connected to their heritage.
+      </p>
+    </div>
+
+    <!-- 🖼️ Image Section -->
+    <div class="md:w-1/2 lg:px-6 py-3 md:flex">
+      <img
+        class="bg-light-bg rounded-md object-cover"
+        src="./assets/images/PHD1.png"
+        alt="Portrait of P. Hezekiah Dike"
+      >
+    </div>
+
+  </section>
+
+</main>
+
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-footer-bg py-10 font-lao text-center text-white">
+    <div class="flex flex-col items-center gap-2">
+      <h1 class="text-dark md:text-lg">© 2025 Peter Hezekiah Dike All rights reserved</h1>
+      <p class="text-text text-sm">Crafted with words & ideas that connect.</p>
+      <div class="flex gap-3 mt-2">
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/linkedin.png" alt="LinkedIn" /></a>
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/facebook.png" alt="Facebook" /></a>
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/instagram.png" alt="Instagram" /></a>
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/twitter.png" alt="Twitter" /></a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <noscript>
+    <style>
+        #myDropdown {
+            display: block !important;
+            /* Always show if no script */
+            position: static !important;
+            /* Inline, so it doesn’t overflow */
+            width: auto !important;
+        }
+    
+        #dropBtn,
+        #cancleBtn {
+            display: none !important;
+            /* Hide toggle buttons if JS is off */
+        }
+    </style>
+    </noscript>
+</body>
+</html>

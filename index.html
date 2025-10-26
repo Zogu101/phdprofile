@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter Hezekiah Dike</title>
+
+  <!-- Custom CSS Variables and Tailwind -->
+  <link rel="stylesheet" href="./assets/css/tailwind.css" />
+  <link rel="stylesheet" href="./assets/css/output.css" />
+
+  <!-- Icon Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+
+  <style>
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="m-0 p-0 box-border font-work text-text">
+  <!-- 🔹 Navbar -->
+  <nav class="flex flex-row sticky top-0 w-full bg-white justify-between px-8 lg:px-20 py-8 z-50">
+    <div>
+      <a href="index.html" class="flex flex-row gap-1.5 items-center">
+        <div class="px-2.5 py-1 bg-primary text-white rounded-full font-bold">P</div>
+        <div class="font-poppins font-semibold text-dark">Hezekiah</div>
+      </a>
+    </div>
+
+    <div>
+      <!-- Mobile Menu -->
+      <div class="dropDown relative inline-block lg:hidden">
+        <button id="dropBtn" class="font-bold text-3xl md:text-4xl">
+          <i class="ph ph-list"></i>
+        </button>
+        <button id="cancleBtn" class="hidden px-2.5 py-1 font-normal text-[0.8rem] bg-light-bg rounded-full">
+          X
+        </button>
+
+        <div id="myDropdown"
+          class="hidden pb-20 md:px-20 flex items-center flex-col absolute right-0 top-full min-w-[10rem] bg-white overflow-auto z-10 rounded-lg shadow-lg">
+          <ul class="mt-3.5 flex flex-col gap-4 items-center">
+            <a href="index.html">
+              <li>Home</li>
+            </a>
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="my_work.html">
+              <li>My Work</li>
+            </a>
+            <a href="blog/index.html">
+              <li>Blog</li>
+            </a>
+            <a href="contact.html" class="bg-primary text-white px-3 py-2 rounded-sm">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex flex-row">
+        <ul class="flex flex-row gap-8 items-center">
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="about.html">
+            <li>About</li>
+          </a>
+          <a href="my_work.html">
+            <li>My Work</li>
+          </a>
+          <a href="blog/index.html">
+            <li>Blog</li>
+          </a>
+          <a href="contact.html" class="bg-primary text-white px-3 py-2 rounded-md">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <main>
+    <section class="Hero bg-accent px-8 pt-8  md:flex w-full md:gap-10 md:pb-10 lg:pt-0 lg:px-20">
+      <div class="flex flex-col justify-center lg:mt-20  gap-6 md:w-1/2">
+        <div class="flex flex-col gap-4">
+          <div>
+            <h1 class="text-3xl lg:text-5xl text-dark font-semibold">
+              Hello, I’m <br />P. Hezekiah Dike
+            </h1>
+            <p class="text-lg text-muted">
+              Author, educator, and cultural historian dedicated to preserving the
+              traditions and history of the Awka people. Writer and community leader from
+              Awka, sharing stories and history to keep our culture alive for future generations.
+            </p>
+          </div>
+
+          <div>
+            <a href="about.html">
+            <button class="px-6 py-2 bg-white text-primary border border-primary rounded-sm  hover:bg-primary hover:text-white 
+           transform hover:scale-105 
+           transition-transform duration-300 ease-in-out ">More</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 w-full gap-1">
+          <div class="flex flex-col items-center py-2.5 bg-primary-light">
+            <h3 class="text-dark font-semibold">10 Y.</h3>
+            <p class="text-gray text-sm">Experience</p>
+          </div>
+          <div class="flex flex-col items-center py-2.5 bg-primary-light">
+            <h3 class="text-dark font-semibold">20+</h3>
+            <p class="text-gray text-sm">Books</p>
+          </div>
+          <div class="flex flex-col items-center py-2.5 bg-primary-light">
+            <h3 class="text-dark font-semibold">58</h3>
+            <p class="text-gray text-sm">Articles</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="md:w-1/2  md:flex lg:flex lg:flex-col lg:justify-center">
+      <img
+        class=" rounded-md object-cover"
+        src="./assets/images/PHD1.png"
+        alt="Portrait of P. Hezekiah Dike"
+      >
+    </div>
+    </section>
+
+    <!-- 🔹 Best Seller -->
+    <section class="best_seller p-8 md:p-0 md:relative md:z-20">
+      <div class="md:flex pt-10 md:pb-10 w-full bg-white">
+        <div class="hidden md:block md:w-1/2"></div>
+        <div class="flex flex-col items-center">
+          <h1 class="text-dark text-2xl font-semibold">Best Seller</h1>
+        </div>
+      </div>
+
+      <div class="Awka_history md:bg-accent md:flex py-10 md:z-10">
+        <div class="flex flex-col items-center  md:absolute px-10 md:-mt-25 md:-ml-15 lg:ml-30">
+          <img class="w-1/2 rounded-2xl" src="./assets/images/cover_Awka_History_And_Tradition.jpg"
+            alt="Awka History and Tradition" />
+        </div>
+
+        <div class="hidden md:block md:w-1/2"></div>
+        <div class="md:w-1/2 flex flex-col gap-3 md:pr-18 items-center md:items-start">
+          <h3 class="text-gray text-2xl">Awka History and Traditions</h3>
+          <p class="text-text text-[12px] text-center md:text-left">
+            This book captures over two centuries of the history, culture, and traditions of
+            the Awka people. Covering the period from 1800–2000, it reflects on key events,
+            customs, and ceremonies that shaped the identity of the community.
+          </p>
+          <a href="more_Info.html">
+            <button class="border border-primary text-primary px-6 py-2 rounded-sm hover:bg-primary hover:text-white 
+           transform hover:scale-105 
+           transition duration-300 ease-in-out">
+              Case Study
+            </button>
+          </a>
+
+        </div>
+      </div>
+      <div class="md:flex pt-10 md:pb-20 w-full bg-white"></div>
+    </section>
+
+    <!-- 🔹 My Work -->
+    <section class="my_work bg-accent px-8 md:px-20 py-20">
+      <div>
+        <div class="py-10 flex flex-col items-center">
+          <h1 class="text-dark text-2xl font-semibold">My Work</h1>
+        </div>
+
+
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+          <!-- Work Card -->
+        <!-- 🧾 Book Card -->
+        <div class="flex md:flex-col gap-5 bg-white py-5  rounded-lg shadow-sm hover:shadow-md transition">
+          <!-- Book Image -->
+          <div class="grid place-items-center md:border-b border-border md:py-1">
+            <img class="md:w-1/2" src="./assets/images/cover_Awka_History_And_Tradition.jpg" alt="Book Cover" />
+          </div>
+
+          <!-- Book Info -->
+          <div class="flex flex-col gap-3 md:px-5">
+            <div>
+              <button class="px-6 py-2 bg-primary text-white rounded-sm font-poppins text-sm">
+                Book
+              </button>
+              <h3 class="text-dark font-medium font-work mt-2">
+                Culture and Identity in Nigeria
+              </h3>
+            </div>
+
+            <p class="text-muted text-sm">
+              Expanding beyond Awka, this book examines cultural identity across Nigeria. It
+              compares traditions across different ethnic groups while analyzing the impact of
+              globalization.
+            </p>
+
+            <!-- View Info Button -->
+            <a href="more_Info.html">
+              <button
+                class="border border-primary text-primary px-6 py-2 rounded-md hover:bg-primary hover:text-white transform hover:scale-105 
+                  transition-transform duration-300 ease-in-out"
+              >
+                View Info
+              </button>
+            </a>
+          </div>
+        </div>
+
+          <!-- Repeat other cards the same way -->
+
+        </div>
+
+        <div class="flex justify-center mt-10">
+          <a href="my_work.html">
+            <button class="px-10 py-2 bg-primary text-white rounded-sm transform hover:scale-105 
+           transition-transform duration-300 ease-in-out">View All</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-footer-bg py-10 font-lao text-center text-white">
+    <div class="flex flex-col items-center gap-2">
+      <h1 class="text-dark md:text-lg">© 2025 Peter Hezekiah Dike All rights reserved</h1>
+      <p class="text-text text-sm">Crafted with words & ideas that connect.</p>
+      <div class="flex gap-3 mt-2">
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/linkedin.png"
+            alt="LinkedIn" /></a>
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/facebook.png"
+            alt="Facebook" /></a>
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/instagram.png"
+            alt="Instagram" /></a>
+        <a class="bg-light-bg p-2 rounded-2xl" href="#"><img class="w-6 md:w-8" src="./assets/images/twitter.png"
+            alt="Twitter" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+  <noscript>
+    <style>
+      #myDropdown {
+        display: block !important;
+        position: static !important;
+        width: auto !important;
+      }
+
+      #dropBtn,
+      #cancleBtn {
+        display: none !important;
+      }
+    </style>
+  </noscript>
+</body>
+
+</html>

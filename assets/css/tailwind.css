@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Work Sans;
+    src: url(/assets/fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+@import "./variables.css";  /* Must come first */
+
+@import "tailwindcss";
+
+@theme {
+  /* 🎨 Brand Colors */
+  --color-primary: #E5BA0B;      /* Gold - buttons, highlights */
+  --color-primary-light: #EDD8FF80; /* Soft background highlight */
+  --color-accent: #F9FAFB;       /* Light background sections */
+  --color-dark: #132238;         /* Headings, strong text */
+  --color-text: #373737;         /* General paragraph text */
+  --color-text-muted: #556070;   /* Secondary paragraph text */
+  --color-gray: #717171;         /* Subheadings, lighter text */
+  --color-border: #C5C5C5;       /* Borders */
+  --color-footer-bg: #E5BA0B;    /* Footer background */
+  --color-white: #FFFFFF;        /* White text or backgrounds */
+  --color-light-bg: #F3F3F3;     /* Social link backgrounds */
+
+  /* ✍️ Font Families */
+  --font-primary: "Work Sans", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+  --font-tertiary: "Lao Sans Pro", sans-serif;
+
+  /* 🧱 Font Sizes */
+  --text-sm: 0.875rem;  /* ~14px */
+  --text-base: 1rem;    /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;   /* 20px */
+  --text-2xl: 1.5rem;   /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem;  /* 36px */
+  --text-5xl: 3rem;     /* 48px */
+
+  /* ⚙️ Spacing and Radius */
+  --radius-sm: 0.2rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
